@@ -1,11 +1,11 @@
 #!/usr/bin/perl
 
 #########################################################
-# Nipe developed by Heitor GouvÃªa                       #
+# Nipe developed by Heitor Gouvêa                       #
 # This work is licensed under MIT License               #
-# Copyright (c) 2015-2016 Heitor GouvÃªa                 #
+# Copyright (c) 2015-2016 Heitor Gouvêa                 #
 #                                                       #
-# [+] AUTOR:        Heitor GouvÃªa                       #
+# [+] AUTOR:        Heitor Gouvêa                       #
 # [+] EMAIL:        hi@heitorgouvea.me                  #
 # [+] GITHUB:       https://github.com/GouveaHeitor     #
 # [+] TWITTER:      https://twitter.com/GouveaHeitor    #
@@ -15,16 +15,7 @@
 package Nipe::Start;
 
 use Nipe::Check;
-
-my $os = `cat /etc/os-release | grep 'ID' | cut -d '=' -f 2`;
-my $username;
-
-if    ($os =~ /[U,u]buntu/) { $username = "debian-tor"; }
-elsif ($os =~ /[D,d]ebian/) { $username = "debian-tor"; }
-elsif ($os =~ /[F,f]edora/) { $username = "toranon"; }
-elsif ($os =~ /[A,a]rch/)   { $username = "tor"; }
-else  { $username = "tor"; }
-
+use Nipe::Device;
 
 sub new {
 	my $dns_port   = "9061";

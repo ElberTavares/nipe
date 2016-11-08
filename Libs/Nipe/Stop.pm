@@ -1,11 +1,11 @@
 #!/usr/bin/perl
 
 #########################################################
-# Nipe developed by Heitor GouvÃªa                       #
+# Nipe developed by Heitor Gouvêa                       #
 # This work is licensed under MIT License               #
-# Copyright (c) 2015-2016 Heitor GouvÃªa                 #
+# Copyright (c) 2015-2016 Heitor Gouvêa                 #
 #                                                       #
-# [+] AUTOR:        Heitor GouvÃªa                       #
+# [+] AUTOR:        Heitor Gouvêa                       #
 # [+] EMAIL:        hi@heitorgouvea.me                  #
 # [+] GITHUB:       https://github.com/GouveaHeitor     #
 # [+] TWITTER:      https://twitter.com/GouveaHeitor    #
@@ -21,9 +21,9 @@ sub new {
 
 	foreach my $table (@table) {
 		system ("sudo iptables -t $table -F OUTPUT");
-		system ("sudo iptables -t $table -F OUTPUT");	
+		system ("sudo iptables -t $table -F OUTPUT");
 	}
-	
+
 	Nipe::Check -> new();
 }
 
