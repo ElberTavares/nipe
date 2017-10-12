@@ -34,6 +34,8 @@
     git clone https://github.com/GouveaHeitor/nipe
     cd nipe
     cpan install Switch JSON LWP::UserAgent
+    apt-get install tor
+    service tor start
 ```
 
 #### Commands:
@@ -46,7 +48,6 @@
     status           See status
 
     Examples:
-
     perl nipe.pl install
     perl nipe.pl start
     perl nipe.pl stop
